@@ -34,7 +34,7 @@ function addCmdToTable(_cmd) {
     tr += '<div class="input-group">';
     tr += '<input class="cmdAttr form-control input-sm roundedLeft" data-l1key="configuration" data-l2key="meter" placeholder="{{Valeur}}">';
     tr += '<span class="input-group-btn">';
-    tr += '<a class="btn btn-default btn-sm listEquipementInfo roundedRight" data-input="value"><i class="fas fa-list-alt"></i></a>';
+    tr += '<a class="btn btn-default btn-sm listEquipementInfo roundedRight" data-input="meter"><i class="fas fa-list-alt"></i></a>';
     tr += '</span>';
     tr += '</div>';
     tr += '</td>';
