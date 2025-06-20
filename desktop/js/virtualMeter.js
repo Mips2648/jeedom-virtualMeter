@@ -13,8 +13,8 @@ function addCmdToTable(_cmd) {
 
     tr += '<td>';
     tr += '<span class="cmdAttr" data-l1key="id" style="display:none;"></span>';
-    tr += '<input class="cmdAttr form-control input-sm" data-l1key="type" value="' + init(_cmd.type) + '" style="display : none;">';
-    tr += '<input class="cmdAttr form-control input-sm" data-l1key="subType" value="' + init(_cmd.subType) + '" style="display : none;">';
+    tr += '<input class="cmdAttr form-control input-sm" data-l1key="type" value="info" style="display : none;">';
+    tr += '<input class="cmdAttr form-control input-sm" data-l1key="subType" value="numeric" style="display : none;">';
 
     tr += '<div class="input-group">';
     tr += '<input class="cmdAttr form-control input-sm roundedLeft" data-l1key="name" placeholder="{{Nom de la commande}}">';
