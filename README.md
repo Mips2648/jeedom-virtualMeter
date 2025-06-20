@@ -1,1 +1,1 @@
-# jeedom-virtualindex
+# jeedom-virtualMeter
