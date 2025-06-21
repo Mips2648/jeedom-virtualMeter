@@ -2,7 +2,7 @@
 	"id": "virtualMeter",
 	"name": "virtualMeter",
 	"description": {
-		"fr_FR": "Plugin de se connecter à un SmartMeter équipé d'un port P1",
+		"fr_FR": "Permet de créer un compteur virtuel basé sur un compteur réel, remis à zéro quotidiennement ou mensuellement.",
 		"en_US": "Plugin to connect to a SmartMeter equipped with a P1 port",
 		"es_ES": "Plugin para conectarse a un SmartMeter equipado con un puerto P1",
 		"de_DE": "Plugin zur Verbindung mit einem SmartMeter, der mit einem P1-Anschluss ausgestattet ist",

@@ -1,6 +1,6 @@
 # jeedom-virtualMeter
 
-Plugins to virtual meter from an actual meter that will reset on a daily or monthly basis
+Create virtual meter from an actual meter that will reset on a daily or monthly basis
 
 ## How to install
 
