@@ -3,11 +3,7 @@
 	"name": "virtualMeter",
 	"description": {
 		"fr_FR": "Permet de créer un compteur virtuel basé sur un compteur réel, remis à zéro quotidiennement ou mensuellement.",
-		"en_US": "Allows you to create a virtual meter based on a real meter, reset daily or monthly.",
-		"es_ES": "Permite crear un contador virtual basado en un contador real, que se pone a cero diaria o mensualmente.",
-		"de_DE": "Ermöglicht die Erstellung eines virtuellen Zählers auf Basis eines realen Zählers, der täglich oder monatlich zurückgesetzt wird.",
-		"it_IT": "Consente di creare un contatore virtuale basato su un contatore reale, azzerato quotidianamente o mensilmente.",
-		"pt_PT": "Permite criar um contador virtual baseado num contador real, que é zerado diariamente ou mensalmente."
+		"en_US": "Allows you to create a virtual meter based on a real meter, reset daily or monthly."
 	},
 	"utilization": "",
 	"licence": "AGPL",
