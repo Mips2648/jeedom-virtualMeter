@@ -1,52 +1,5 @@
 {
-    "plugins\/SmartMeterP1\/core\/ajax\/SmartMeterP1.ajax.php": {
-        "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
-        "Aucune méthode correspondante à : ": "Keine passende Methode zu :",
-        "Erreur lors de la création des commandes": "Fehler beim Erstellen von Befehlen",
-        "eqLogic non trouvé : ": "eqLogic nicht gefunden :"
-    },
-    "plugins\/SmartMeterP1\/core\/class\/SmartMeterP1.class.php": {
-        "Impossible de lancer le démon": "Der Dämon kann nicht gestartet werden",
-        "Veuillez vérifier la configuration": "Bitte überprüfen Sie die Konfiguration",
-        "Vous devez saisir une adresse IP pour activer l'équipement": "Sie müssen eine IP-Adresse eingeben, um das Gerät zu aktivieren"
-    },
-    "plugins\/SmartMeterP1\/core\/config\/p1.json": {
-        "Heures pleines": "Vollständige Stunden",
-        "Id": "ICH WÜRDE",
-        "Injection heures creuses": "Einspeisung Nebenzeiten",
-        "Injection heures pleines": "Einspeisung volle Stunden",
-        "Injection jour": "Einspritzung Tag",
-        "Injection max mois": "Injektion max. Monat",
-        "Injection mois": "Injektion Monat",
-        "Injection total": "Injektion gesamt",
-        "Intensité phase 1": "Intensität Phase 1",
-        "Intensité phase 2": "Intensität Phase 2",
-        "Intensité phase 3": "Intensität Phase 3",
-        "Numéro de série": "Seriennummer",
-        "Prélèvement heures creuses": "Entnahme Nebenzeiten",
-        "Prélèvement heures pleines": "Entnahme Vollstunden",
-        "Prélèvement jour": "Entnahme Tag",
-        "Prélèvement max mois": "Max. monatliche Entnahme",
-        "Prélèvement mois": "Abbuchung Monat",
-        "Prélèvement total": "Gesamtentnahme",
-        "Puissance injectée": "Eingespeiste Leistung",
-        "Puissance injectée phase 1": "Eingespeiste Leistung Phase 1",
-        "Puissance injectée phase 2": "Eingespeiste Leistung Phase 2",
-        "Puissance injectée phase 3": "Eingespeiste Leistung Phase 3",
-        "Puissance nette": "Netto-Leistung",
-        "Puissance prélevée": "Entnommene Leistung",
-        "Puissance prélevée phase 1": "Entnommene Leistung Phase 1",
-        "Puissance prélevée phase 2": "Entnommene Leistung Phase 2",
-        "Puissance prélevée phase 3": "Entnommene Leistung Phase 3",
-        "Statut": "Status",
-        "Tension phase 1": "Spannung Phase 1",
-        "Tension phase 2": "Spannung Phase 2",
-        "Tension phase 3": "Spannung Phase 3"
-    },
-    "plugins\/SmartMeterP1\/core\/php\/jeeSmartMeterP1.php": {
-        "Vous n\\'etes pas autorisé à effectuer cette action": "Sie sind nicht berechtigt, diese Aktion durchzuführen"
-    },
-    "plugins\/SmartMeterP1\/desktop\/js\/SmartMeterP1.js": {
+    "plugins\/virtualMeter\/desktop\/js\/virtualMeter.js": {
         "Afficher": "Anzeige",
         "Choisir une icône": "Wählen Sie ein Symbol",
         "Historiser": "Chronik",
@@ -54,13 +7,11 @@
         "Max": "Max",
         "Min": "Minimum",
         "Nom de la commande": "Name des Befehls",
-        "Opération réalisée avec succès": "Erfolgreich durchgeführte Operation",
         "Supprimer la commande": "Befehl löschen",
-        "Synchronisation réussie.": "Synchronisation erfolgreich.",
         "Tester": "Prüfung",
         "Unité": "Unit"
     },
-    "plugins\/SmartMeterP1\/desktop\/php\/SmartMeterP1.php": {
+    "plugins\/virtualMeter\/desktop\/php\/virtualMeter.php": {
         "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
         "Actions": "Lager",
         "Activer": "Aktivieren",
@@ -71,19 +22,14 @@
         "Commandes": "Befehle",
         "Configuration": "Konfiguration",
         "Configuration avancée": "Erweiterte Konfiguration",
-        "Connexion automatique": "Automatische Verbindung",
-        "Créer les commandes manquantes": "Erstellen Sie die fehlenden Befehle",
         "Description": "Beschreibung",
         "Documentation": "Dokumentation",
         "Equipement": "Gerät",
         "Equipement non visible": "Ausrüstung nicht sichtbar",
         "Equipement visible": "Sichtbare Ausstattung",
-        "Essayer de se (re)connecter automatiquement si hors ligne": "Versuchen, sich automatisch (wieder) einzuloggen, wenn offline",
         "Etat": "Zustand",
         "Gestion": "Management",
-        "Hôte": "Host",
         "Informations": "Information",
-        "Mes SmartMeter P1": "Mes SmartMeter P1",
         "Nom": "Name",
         "Nom de l'équipement": "Name des Geräts",
         "Objet parent": "Übergeordnetes Objekt",
@@ -95,15 +41,5 @@
         "Supprimer": "Entfernen",
         "Type": "Typ",
         "Visible": "Sichtbar"
-    },
-    "plugins\/SmartMeterP1\/plugin_info\/configuration.php": {
-        "Cycle (s)": "Zyklus (s)",
-        "Démon": "Dämon",
-        "Fréquence d'envoi des informations vers Jeedom; valeur entre 1 et 10": "Häufigkeit, mit der Informationen an Jeedom gesendet werden; Wert zwischen 1 und 10",
-        "Port socket interne": "Interner Socket-Port"
-    },
-    "plugins\/SmartMeterP1\/plugin_info\/install.php": {
-        "Cette mise à jour nécessite de réinstaller les dépendances même si elles sont marquées comme OK": "Dieses Update erfordert eine Neuinstallation der Abhängigkeiten, auch wenn sie als OK markiert sind",
-        "Veuilez vérifier les dépendances": "Bitte überprüfen Sie die Abhängigkeiten"
     }
 }
