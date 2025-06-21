@@ -18,58 +18,12 @@
 
 require_once __DIR__ . '/../../../core/php/core.inc.php';
 
-function InstallComposerDependencies() {
-    $pluginId = basename(realpath(__DIR__ . '/..'));
-    log::add($pluginId, 'info', 'Install composer dependencies');
-    $cmd = 'cd ' . __DIR__ . '/../;export COMPOSER_ALLOW_SUPERUSER=1;export COMPOSER_HOME="/tmp/composer";' . system::getCmdSudo() . 'composer install --no-ansi --no-dev --no-interaction --no-plugins --no-progress --no-scripts --optimize-autoloader;' . system::getCmdSudo() . ' chown -R www-data:www-data *';
-    shell_exec($cmd);
-}
-
-function virtualMeter_post_plugin_install() {
-    InstallComposerDependencies();
-}
 
 function virtualMeter_install() {
-    $pluginId = basename(realpath(__DIR__ . '/..'));
-
-    $cron = cron::byClassAndFunction($pluginId, 'dailyReset');
-    if (!is_object($cron)) {
-        $cron = new cron();
-        $cron->setClass($pluginId);
-        $cron->setFunction('dailyReset');
-    }
-    $cron->setEnable(1);
-    $cron->setDeamon(0);
-    $cron->setSchedule('59 23 * * *');
-    $cron->setTimeout(10);
-    $cron->save();
 }
 
 function virtualMeter_update() {
-    $pluginId = basename(realpath(__DIR__ . '/..'));
-
-    $cron = cron::byClassAndFunction($pluginId, 'dailyReset');
-    if (!is_object($cron)) {
-        $cron = new cron();
-        $cron->setClass($pluginId);
-        $cron->setFunction('dailyReset');
-    }
-    $cron->setEnable(1);
-    $cron->setDeamon(0);
-    $cron->setSchedule('59 23 * * *');
-    $cron->setTimeout(10);
-    $cron->save();
 }
 
 function virtualMeter_remove() {
-    $pluginId = basename(realpath(__DIR__ . '/..'));
-    try {
-        $crons = cron::searchClassAndFunction($pluginId, 'dailyReset');
-        if (is_array($crons)) {
-            foreach ($crons as $cron) {
-                $cron->remove();
-            }
-        }
-    } catch (Exception $e) {
-    }
 }
