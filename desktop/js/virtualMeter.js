@@ -25,6 +25,7 @@ function addCmdToTable(_cmd) {
 
     tr += '<td>';
     tr += '<select class="form-control cmdAttr input-sm" data-l1key="configuration" data-l2key="type">';
+    tr += '<option value="manual">{{Manuel}}</option>';
     tr += '<option value="daily">{{Journalier}}</option>';
     tr += '<option value="monthly">{{Mensuel}}</option>';
     tr += '</select>';
@@ -32,7 +33,7 @@ function addCmdToTable(_cmd) {
 
     tr += '<td>';
     tr += '<div class="input-group">';
-    tr += '<input class="cmdAttr form-control input-sm roundedLeft" data-l1key="configuration" data-l2key="meter" placeholder="{{Valeur}}">';
+    tr += '<input class="cmdAttr form-control input-sm roundedLeft" data-l1key="configuration" data-l2key="meter" placeholder="{{Commande}}">';
     tr += '<span class="input-group-btn">';
     tr += '<a class="btn btn-default btn-sm listEquipementInfo roundedRight" data-input="meter"><i class="fas fa-list-alt"></i></a>';
     tr += '</span>';
@@ -59,7 +60,9 @@ function addCmdToTable(_cmd) {
         tr += '<a class="btn btn-default btn-xs cmdAction" data-action="configure"><i class="fas fa-cogs"></i></a> ';
         tr += '<a class="btn btn-default btn-xs cmdAction" data-action="test"><i class="fas fa-rss"></i> {{Tester}}</a>';
     }
-    tr += '<i class="fas fa-minus-circle pull-right cmdAction cursor" data-action="remove" title="{{Supprimer la commande}}"></i>';
+    if (_cmd.type == 'info') {
+        tr += '<i class="fas fa-minus-circle pull-right cmdAction cursor" data-action="remove" title="{{Supprimer la commande}}"></i>';
+    }
     tr += '</td>';
     tr += '</tr>';
 
