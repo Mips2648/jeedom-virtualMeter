@@ -47,15 +47,15 @@ class virtualMeterCmd extends cmd {
 	public function getMeterValue() {
 		$meter = cmd::byId(trim($this->getConfiguration('meter'), '#'));
 		if (!is_object($meter)) {
-			log::add(__CLASS__, 'warning', "Meter not found for command {$this->getHumanName()}");
+			log::add('virtualMeter', 'warning', "Meter not found for command {$this->getHumanName()}");
 			return null;
 		}
 		$meterValue = $meter->execCmd();
 		if ($meterValue === null) {
-			log::add(__CLASS__, 'warning', "No value for meter {$meter->getHumanName()} on {$this->getName()}");
+			log::add('virtualMeter', 'warning', "No value for meter {$meter->getHumanName()} on {$this->getName()}");
 			return null;
 		}
-		log::add(__CLASS__, 'debug', "Meter value for command {$this->getHumanName()} is {$meterValue}");
+		log::add('virtualMeter', 'debug', "Meter value for command {$this->getHumanName()} is {$meterValue}");
 		return floatval($meterValue);
 	}
 
