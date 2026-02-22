@@ -73,11 +73,11 @@ class virtualMeterCmd extends cmd {
 		if (!is_object($eqLogic)) {
 			return;
 		}
-		$cmdStart = $eqLogic->getCmd('action', "start_{$this->getLogicalId()}");
+		$cmdStart = $eqLogic->getCmd('action', "start_{$this->getId()}");
 		if (is_object($cmdStart)) {
 			$cmdStart->remove();
 		}
-		$cmdStop = $eqLogic->getCmd('action', "stop_{$this->getLogicalId()}");
+		$cmdStop = $eqLogic->getCmd('action', "stop_{$this->getId()}");
 		if (is_object($cmdStop)) {
 			$cmdStop->remove();
 		}
@@ -105,24 +105,24 @@ class virtualMeterCmd extends cmd {
 		}
 		if ($this->getConfiguration('type') === 'manual') {
 			$eqLogic = $this->getEqLogic();
-			$cmdStart = $eqLogic->getCmd('action', "start_{$this->getLogicalId()}");
+			$cmdStart = $eqLogic->getCmd('action', "start_{$this->getId()}");
 			if (!is_object($cmdStart)) {
 				$cmdStart = new virtualMeterCmd();
 				$cmdStart->setEqLogic_id($eqLogic->getId());
 				$cmdStart->setType('action');
 				$cmdStart->setSubType('other');
-				$cmdStart->setLogicalId("start_{$this->getLogicalId()}");
+				$cmdStart->setLogicalId("start_{$this->getId()}");
 				$cmdStart->setName(__('Démarrer', __CLASS__) . ' ' . $this->getName());
 				$cmdStart->setConfiguration('meter', $this->getConfiguration('meter'));
 				$cmdStart->save();
 			}
-			$cmdStop = $eqLogic->getCmd('action', "stop_{$this->getLogicalId()}");
+			$cmdStop = $eqLogic->getCmd('action', "stop_{$this->getId()}");
 			if (!is_object($cmdStop)) {
 				$cmdStop = new virtualMeterCmd();
 				$cmdStop->setEqLogic_id($eqLogic->getId());
 				$cmdStop->setType('action');
 				$cmdStop->setSubType('other');
-				$cmdStop->setLogicalId("stop_{$this->getLogicalId()}");
+				$cmdStop->setLogicalId("stop_{$this->getId()}");
 				$cmdStop->setName(__('Arrêter', __CLASS__) . ' ' . $this->getName());
 				$cmdStop->setConfiguration('meter', $this->getConfiguration('meter'));
 				$cmdStop->save();
