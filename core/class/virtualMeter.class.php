@@ -55,6 +55,7 @@ class virtualMeterCmd extends cmd {
 			log::add(__CLASS__, 'warning', "No value for meter {$meter->getHumanName()} on {$this->getName()}");
 			return null;
 		}
+		log::add(__CLASS__, 'debug', "Meter value for command {$this->getHumanName()} is {$meterValue}");
 		return floatval($meterValue);
 	}
 
