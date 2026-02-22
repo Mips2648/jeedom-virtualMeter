@@ -140,7 +140,7 @@ class virtualMeterCmd extends cmd {
 		$this->removeActionCmd();
 	}
 
-	public function updateConso(int $meterValue) {
+	public function updateConso(float $meterValue) {
 		$eqLogic = $this->getEqLogic();
 
 		$cmdIndex = $this->getCache('index', 0);
