@@ -1,18 +1,24 @@
 {
+    "plugins\/virtualMeter\/core\/class\/virtualMeter.class.php": {
+        "Arrêter": "Desligar",
+        "Démarrer": "Iniciar",
+        "La commande de mesure est obligatoire": "O comando de medição é obrigatório"
+    },
     "plugins\/virtualMeter\/desktop\/js\/virtualMeter.js": {
         "Afficher": "Mostrar",
         "Choisir une icône": "Escolha um ícone",
+        "Commande": "Controlo",
         "Historiser": "Histórico",
         "Inverser": "Inverter",
         "Journalier": "Diário",
+        "Manuel": "Manual",
         "Max": "Máx.",
         "Mensuel": "Mensal",
         "Min": "Mínimo",
         "Nom de la commande": "Nome do comando",
         "Supprimer la commande": "Apagar comando",
         "Tester": "Testar",
-        "Unité": "Unidade",
-        "Valeur": "Valor"
+        "Unité": "Unidade"
     },
     "plugins\/virtualMeter\/desktop\/php\/virtualMeter.php": {
         "401 - Accès non autorisé": "401 - Acesso não autorizado",
