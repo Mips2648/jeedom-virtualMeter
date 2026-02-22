@@ -148,6 +148,7 @@ class virtualMeterCmd extends cmd {
 			$this->setCache('index', $meterValue);
 			$cmdIndex = $meterValue;
 		}
+		log::add('virtualMeter', 'debug', "Updating consumption for command {$this->getHumanName()} on {$eqLogic->getName()} with meter value {$meterValue} and index {$cmdIndex}");
 		$eqLogic->checkAndUpdateCmd($this, round($meterValue - $cmdIndex, 3));
 	}
 
