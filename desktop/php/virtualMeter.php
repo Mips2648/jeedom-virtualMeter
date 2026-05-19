@@ -143,7 +143,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
             </div>
             <div role="tabpanel" class="tab-pane" id="commandtab">
                 <div class=" pull-right" style="display:inline-flex;margin-top:5px;">
-                    <a class="btn btn-info btn-xs" id="bt_addVirtualMetter"><i class="fas fa-plus-circle"></i> {{Ajouter deux compteur virtuel}}
+                    <a class="btn btn-info btn-xs" id="bt_addVirtualMetter"><i class="fas fa-plus-circle"></i> {{Ajouter un compteur virtuel}}
                     </a>
                 </div>
                 <br><br>
