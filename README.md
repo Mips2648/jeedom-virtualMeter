@@ -1,5 +1,7 @@
 # jeedom-virtualMeter
 
+[![CI](https://github.com/mips2648/jeedom-virtualMeter/actions/workflows/ci.yml/badge.svg)](https://github.com/mips2648/jeedom-virtualMeter/actions/workflows/ci.yml)
+
 Create virtual meter from an actual meter that will reset on a daily or monthly basis
 
 ## How to install
