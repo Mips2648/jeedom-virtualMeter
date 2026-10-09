@@ -63,7 +63,7 @@ class virtualMeterCmd extends cmd {
 		if ($this->getType() !== 'info') {
 			return;
 		}
-		if (is_null($meterValue = self::getMeterValue($this))) {
+		if (is_null($meterValue = self::getMeterValue())) {
 			return;
 		}
 		$this->setCache('index', $meterValue);
@@ -152,7 +152,7 @@ class virtualMeterCmd extends cmd {
 		$eqLogic->checkAndUpdateCmd($this, round($meterValue - $cmdIndex, 3));
 	}
 
-	public function execute($_options = array()) {
+	public function execute($_options = array()): bool {
 		$eqLogic = $this->getEqLogic();
 		log::add('virtualMeter', 'debug', "command: {$this->getLogicalId()} on {$eqLogic->getName()}");
 
@@ -166,14 +166,16 @@ class virtualMeterCmd extends cmd {
 			$infoCmd = virtualMeterCmd::byId(substr($this->getLogicalId(), 5));
 			if (!is_object($infoCmd)) {
 				log::add('virtualMeter', 'error', "Info command not found for stop command {$this->getLogicalId()} on {$eqLogic->getName()}");
-				return;
+				return false;
 			}
 			if (is_null($meterValue = $infoCmd->getMeterValue())) {
-				return;
+				return false;
 			}
 			$infoCmd->updateConso($meterValue);
 		} else {
 			log::add('virtualMeter', 'error', "Unknown command: {$this->getLogicalId()} on {$eqLogic->getName()}");
+			return false;
 		}
+		return true;
 	}
 }
