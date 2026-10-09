@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [beta]
+    branches: [master]
     paths:
       - '**.php'
       - composer.json
@@ -11,7 +11,7 @@ on:
       - phpstan.neon.dist
       - .github/workflows/ci.yml
   pull_request:
-    branches: [beta]
+    branches: [master]
     paths:
       - '**.php'
       - composer.json
